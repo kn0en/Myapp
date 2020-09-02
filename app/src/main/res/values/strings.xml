@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">My app</string>
+
+    <!--Hitung luas-->
+    <string name="luas">Luas</string>
+    <string name="nilai_luas">Nilai Luas</string>
+    <string name="masukkan_panjang">Masukkan Panjang</string>
+    <string name="masukkan_lebar">Masukkan Lebar</string>
+    <string name="hitung">Hitung</string>
+
+    <!--Recycler View-->
+    <string name="recycler">Recycler</string>
+    <string name="description">Description</string>
+    <string name="example_application">Example application</string>
+    <string name="todo">TODO</string>
+
+    <!--Kalkulator-->
+    <string name="kalkulator">Kalkulator</string>
+
+
+    <!--Browser-->
+    <string name="browser">Browser</string>
+    <string name="input_url">input URL</string>
+    <string name="open">Open</string>
+    <string name="c">C</string>
+    <string name="_1">1</string>
+    <string name="vis">/</string>
+    <string name="mul">*</string>
+    <string name="equ">=</string>
+    <string name="_0">0</string>
+    <string name="zer">.</string>
+    <string name="_9">9</string>
+    <string name="_8">8</string>
+    <string name="_7">7</string>
+    <string name="sub">-</string>
+    <string name="_6">6</string>
+    <string name="_5">5</string>
+    <string name="_4">4</string>
+    <string name="add">+</string>
+    <string name="_3">3</string>
+    <string name="_2">2</string>
+</resources>
