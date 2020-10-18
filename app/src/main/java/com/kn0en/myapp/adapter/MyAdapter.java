@@ -1,8 +1,6 @@
-package com.oktavianyudha.myapp.adapter;
+package com.kn0en.myapp.adapter;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
-import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,7 +9,10 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.oktavianyudha.myapp.R;
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.kn0en.myapp.R;
 
 import java.util.ArrayList;
 
@@ -37,8 +38,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         LayoutInflater inflater = LayoutInflater.from(viewGroup.getContext());
         View view = inflater.inflate(R.layout.row_recycler, viewGroup ,false);
-        ViewHolder holder = new ViewHolder(view);
-        return holder;
+        return new ViewHolder(view);
     }
 
     @Override
@@ -55,11 +55,11 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         return mImage.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
-            ImageView imagee;
-            TextView textHeader;
-            TextView textFooter;
-            RelativeLayout parentLayout;
+    public static class ViewHolder extends RecyclerView.ViewHolder {
+        ImageView imagee;
+        TextView textHeader;
+        TextView textFooter;
+        RelativeLayout parentLayout;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);

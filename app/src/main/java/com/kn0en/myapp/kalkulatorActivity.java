@@ -1,10 +1,11 @@
-package com.oktavianyudha.myapp;
+package com.kn0en.myapp;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class kalkulatorActivity extends AppCompatActivity {
 
@@ -118,6 +119,7 @@ public class kalkulatorActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 if (textView == null){
+                    assert false;
                     textView.setText("");
                 }else {
                     mValueOne = Double.parseDouble(textView.getText() + "");
@@ -159,26 +161,26 @@ public class kalkulatorActivity extends AppCompatActivity {
             public void onClick(View v) {
                 mValueTwo = Double.parseDouble(textView.getText() + "");
 
-                if (mAddition == true){
+                if (mAddition) {
 
-                    textView.setText(mValueOne + mValueTwo +"");
-                    mAddition=false;
+                    textView.setText(mValueOne + mValueTwo + "");
+                    mAddition = false;
                 }
 
 
-                if (mSubtract == true){
-                    textView.setText(mValueOne - mValueTwo+"");
-                    mSubtract=false;
+                if (mSubtract) {
+                    textView.setText(mValueOne - mValueTwo + "");
+                    mSubtract = false;
                 }
 
-                if (mMultiplication == true){
-                    textView.setText(mValueOne * mValueTwo+"");
-                    mMultiplication=false;
+                if (mMultiplication) {
+                    textView.setText(mValueOne * mValueTwo + "");
+                    mMultiplication = false;
                 }
 
-                if (mDivision == true){
-                    textView.setText(mValueOne / mValueTwo+"");
-                    mDivision=false;
+                if (mDivision) {
+                    textView.setText(mValueOne / mValueTwo + "");
+                    mDivision = false;
                 }
             }
         });
